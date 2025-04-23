@@ -889,7 +889,7 @@ class SwinIR_MFFA(nn.Module):
                  norm_layer=nn.LayerNorm, ape=False, patch_norm=True,
                  use_checkpoint=False, upscale=2, img_range=1., upsampler='', resi_connection='1conv',
                  **kwargs):
-        super(SwinIR, self).__init__()
+        super(SwinIR_MFFA, self).__init__()
         num_in_ch = in_chans
         num_out_ch = in_chans
         num_feat = 64
